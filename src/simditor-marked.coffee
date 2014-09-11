@@ -6,7 +6,7 @@ class MarkedButton extends SimditorButton
 
   name: 'marked'
   title: 'marked'
-  icon: 'gavel'
+  icon: 'maxcdn'
   shortcut: 'ctrl+77'
 
   #反转义字符串
