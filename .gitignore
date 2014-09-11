@@ -1,0 +1,6 @@
+# Created by .gitignore support plugin (hsz.mobi)
+.slow
+.idea
+logs
+bower_components
+node_modules

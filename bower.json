@@ -1,0 +1,24 @@
+{
+  "name": "simditor-marked",
+  "version": "0.0.1",
+  "homepage": "https://github.com/huyinghuan/simditor-marked",
+  "authors": [
+    "huyinghuan <ec.huyinghuan@gmail.com>"
+  ],
+  "description": "a markdown plugin for Simditor",
+  "main": "lib/js",
+  "keywords": ["simditor", "markdown"],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "simditor": "~1.0.0",
+    "marked": "~0.3.2"
+  }
+}

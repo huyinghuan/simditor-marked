@@ -1,0 +1,14 @@
+{
+  "name": "simditor-marked",
+  "version": "0.0.1",
+  "homepage": "https://github.com/huyinghuan/simditor-marked",
+  "keywords": [
+    "simditor",
+    "markdown"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-coffee": "^0.11.1"
+  }
+}

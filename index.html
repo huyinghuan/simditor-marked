@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/simditor/styles/simditor.css" />
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/simditor/lib/simditor-all.js"></script>
+  <script type="text/javascript" src="bower_components/marked/lib/marked.js"></script>
+  <script src="lib/simditor-marked.js"></script>
+</head>
+<body>
+<textarea id="editor" placeholder="这里输入内容" autofocus></textarea>
+</body>
+<script>
+  var editor = new Simditor({
+    textarea: $('#editor'),
+    toolbar: [
+      //...
+      'marked'
+    ]
+  });
+</script>
+</html>
