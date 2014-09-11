@@ -21,7 +21,7 @@ new Simditor({
 })
 ```
 
-点击marked 按钮（一个锤子）后（或用快捷键Ctrl+m），将格式化编辑器里面markdown的内容。
+点击marked 按钮（类似m的图标）后（或用快捷键Ctrl+m），将格式化编辑器里面markdown的内容。
 如果选中了一部分编辑器的内容，那么只会格式选中的内容，否则格式全部内容。
 
 ### 使用bower安装
@@ -41,3 +41,9 @@ bower install
 grunt
 ```
 在浏览器打开index.html即可
+
+### History
+
+v0.0.2 
+
+1. 更新icon. 不用锤子用类似m的图标了。
