@@ -24,6 +24,12 @@ new Simditor({
 点击marked 按钮（一个锤子）后（或用快捷键Ctrl+m），将格式化编辑器里面markdown的内容。
 如果选中了一部分编辑器的内容，那么只会格式选中的内容，否则格式全部内容。
 
+### 使用bower安装
+
+```shell
+bower install simditor-marked
+```
+
 ### 查看 demo
 
 clone 本仓库。

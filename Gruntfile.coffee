@@ -7,3 +7,4 @@ module.exports = (grunt)->
           "lib/simditor-marked.js":"src/simditor-marked.coffee"
   )
   grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.registerTask 'default', ['coffee:compile']
