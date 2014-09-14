@@ -61,7 +61,8 @@ class MarkedButton extends SimditorButton
 
   doReplaceSelction: (sel)->
     value = @marked @encodeHTML sel
-    @replaceSelection @decodeCodes value
+    value = @decodeCodes value
+    @replaceSelection value
 
   doReplaceAll: ()->
     value = @editor.getValue()
@@ -73,5 +74,6 @@ class MarkedButton extends SimditorButton
   command: ()->
     sel = window.getSelection().toString()
     if sel.length is 0 then @doReplaceAll() else @doReplaceSelction(sel)
+    @editor.selection.setRangeAtEndOf('p')
 
 Simditor.Toolbar.addButton(MarkedButton)
