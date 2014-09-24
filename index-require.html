@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.css" />
+  <link rel="stylesheet" type="text/css" href="bower_components/simditor/styles/simditor.css" />
+  <script src="bower_components/requirejs/require.js"></script>
+</head>
+<body>
+<textarea id="editor" placeholder="这里输入内容" autofocus></textarea>
+</body>
+<script>
+  require.config({
+    paths:{
+      marked: 'bower_components/marked/lib/marked'
+    }
+  });
+  require(['bower_components/jquery/dist/jquery.min', 'bower_components/simditor/lib/simditor-all', 'lib/simditor-marked'], function(){
+    var editor = new Simditor({
+      textarea: $('#editor'),
+      toolbar: [
+        //...
+        'marked'
+      ]
+    });
+  });
+
+
+</script>
+</html>
