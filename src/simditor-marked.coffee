@@ -34,7 +34,6 @@
       codes = div.querySelectorAll 'code'
       for code in codes
         text = @decodeHTML(code.innerText or div.textContent)
-
         code.innerText = text if code.innerText
         code.textContent = text if code.textContent
 
