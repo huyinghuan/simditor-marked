@@ -19,7 +19,8 @@
     decodeHTML: (str)->
       div = document.createElement('div')
       div.innerHTML = str
-      div.innerText
+      div.innerText or div.textContent
+
     #转义字符串
     encodeHTML: (str)->
       div = document.createElement('div')
@@ -32,8 +33,11 @@
       div.innerHTML = content
       codes = div.querySelectorAll 'code'
       for code in codes
-        text = @decodeHTML code.innerText
-        code.innerText = text
+        text = @decodeHTML(code.innerText or div.textContent)
+
+        code.innerText = text if code.innerText
+        code.textContent = text if code.textContent
+
       return div.innerHTML
 
 
