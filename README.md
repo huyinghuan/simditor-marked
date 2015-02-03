@@ -36,26 +36,34 @@ new Simditor({
 在require.js的入口 配置 marked
 ```
  require.config({
-    ...
     paths:{
-      ...
-      marked: 'path/to/marked'
-      ...
+      jquery: 'bower_components/jquery/dist/jquery.min',
+      simditor: 'bower_components/simditor/lib/simditor',
+      'simple-module': 'bower_components/simple-module/lib/module',
+      'simple-uploader': 'bower_components/simple-uploader/lib/uploader',
+      'simple-hotkeys': 'bower_components/simple-hotkeys/lib/hotkeys',
+      'simditor-marked': 'lib/simditor-marked',
+      marked: 'bower_components/marked/lib/marked'
     }
   });
 ```
 
 使用simditor
 ```
-  require(['path/to/jquery.min', 'path/to/simditor-all', 'path/to/simditor-marked'], function(){
-    var editor = new Simditor({
-      textarea: $('#editor'),
-      toolbar: [
-        //...
-        'marked'
-      ]
+  require(
+    [
+      'jquery',
+      'simditor',
+      'simditor-marked'
+    ],function($, Simditor){
+      var editor = new Simditor({
+        textarea: $('#editor'),
+        toolbar: [
+          //...
+          'marked'
+        ]
+      });
     });
-  });
 ```
 
 
