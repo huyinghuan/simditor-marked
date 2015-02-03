@@ -78,6 +78,9 @@ grunt
 在浏览器打开index.html即可(requirejs 的demo为index-require.html)
 
 ### History
+v0.0.6
+1.支持mac快捷键 cmd + m
+
 v0.0.5
 1.支持 ```simditor``` 2.0.6以上版本．
 

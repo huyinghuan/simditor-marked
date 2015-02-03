@@ -5,15 +5,23 @@
     factory window.Simditor, window.marked
 )((Simditor, _marked)->
   class MarkedButton extends Simditor.Button
-    constructor: ()->
+    constructor: ->
       super
       @marked = _marked
       throw new Error('cannot find the plugin marked') if not _marked
 
+    _init: ->
+      if @editor.util.os.mac
+        @title = @title + ' ( Cmd + m )'
+      else
+        @title = @title + ' ( Ctrl + m )'
+        @shortcut = 'ctrl+m'
+      super()
+
     name: 'marked'
     title: 'marked'
     icon: 'maxcdn'
-    shortcut: 'ctrl+m'
+    shortcut: 'cmd+m'
 
     #反转义字符串
     decodeHTML: (str)->
