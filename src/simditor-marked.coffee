@@ -1,10 +1,10 @@
 ((factory)->
   if (typeof define is 'function') and define.amd
-    define ['marked'], factory
+    define ['simditor', 'marked'], factory
   else
-    factory window.marked
-)((_marked)->
-  class MarkedButton extends SimditorButton
+    factory window.Simditor, window.marked
+)((Simditor, _marked)->
+  class MarkedButton extends Simditor.Button
     constructor: ()->
       super
       @marked = _marked
@@ -13,7 +13,7 @@
     name: 'marked'
     title: 'marked'
     icon: 'maxcdn'
-    shortcut: 'ctrl+77'
+    shortcut: 'ctrl+m'
 
     #反转义字符串
     decodeHTML: (str)->

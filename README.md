@@ -78,6 +78,9 @@ grunt
 在浏览器打开index.html即可(requirejs 的demo为index-require.html)
 
 ### History
+v0.0.5
+1.支持 ```simditor``` 2.0.6以上版本．
+
 v0.0.4
 
 1. 修复bug #1. 在firefox中无法正确转义代码块

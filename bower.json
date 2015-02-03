@@ -1,6 +1,6 @@
 {
   "name": "simditor-marked",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/huyinghuan/simditor-marked",
   "authors": [
     "huyinghuan <ec.huyinghuan@gmail.com>"
@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.0",
-    "simditor": "~1.0.0",
+    "simditor": "~2.0.6",
     "marked": "~0.3.2"
   },
   "devDependencies": {
