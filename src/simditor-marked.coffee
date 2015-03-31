@@ -16,13 +16,16 @@
       else
         @title = @title + ' ( Ctrl + m )'
         @shortcut = 'ctrl+m'
-      super()
+      super
+      @setIcon("maxcdn")
 
     name: 'marked'
     title: 'marked'
     icon: 'maxcdn'
     shortcut: 'cmd+m'
 
+    setIcon: (icon)->
+      @el.find("span").removeClass().addClass("fa fa-#{icon}")
     #反转义字符串
     decodeHTML: (str)->
       div = document.createElement('div')
