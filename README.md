@@ -86,6 +86,10 @@ grunt
 在浏览器打开index.html即可(requirejs 的demo为index-require.html)
 
 ### History
+v0.0.7
+1. 支持2.1.5
+(由于官方不在提供统一的图标处理，因此需要额外添加对fontawesome的依赖．具体可以参考demo: index.html)
+
 v0.0.6
 1.支持mac快捷键 cmd + m
 
