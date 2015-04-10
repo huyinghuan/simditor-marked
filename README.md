@@ -3,6 +3,8 @@ simditor-marked
 
 [Simditor](http://simditor.tower.im/)扩展，将编辑器内markdown的内容格式化
 
+另外Simditor全屏编辑插件[simditor-fullscreen](https://github.com/huyinghuan/simditor-fullscreen)
+
 ### 如何使用
 
 #### 常规加载
